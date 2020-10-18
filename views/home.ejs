@@ -5,8 +5,9 @@
 <!-- <% console.log(posts) %> -->
 <% posts.forEach(function(element){ %>
         <h1><%= element.title %></h1>
-        <p><%= element.content.substring(0,100) %>...<a href="/post/<%=element.title%>">Read more</a></p>
+        <p><%= element.content.substring(0,100) %>...<a href="/post/<%=element._id%>">Read more</a></p>
         
 <% }) %>
+<button class="btn" id="my">+</button>
 
 <%- include('partial/footer'); -%>
